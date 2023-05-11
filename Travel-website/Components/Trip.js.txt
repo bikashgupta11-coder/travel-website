@@ -1,0 +1,45 @@
+import TripData from "./TripData";
+import "./TripStyles.css";
+import Trip1 from "../assets/abbt10.jpeg";
+import Trip2 from "../assets/abbt11.jpg";
+import Trip3 from "../assets/abbt12.jpeg";
+
+function Trip() {
+  return (
+    <div className="trip">
+      <h1> Recent Trips </h1>
+      <p>You can discover unique destinationusing Google Maps.</p>
+      <div className="tripcard">
+        <TripData
+          image={Trip1}
+          heading="Trip in Indonesia"
+          text="From the idyllic beaches of Bali to the chaotic melting pot of Jakarta, Indonesia is a diverse Southeast Asian gem.
+          West Java and Sumatra are home to some of the most beautiful tropical forests in the world – perfect for jungle trekking.
+           The Prambanan collection of Hindu temples in Yogyakarta will astound you with their architecture and aura of spirituality."
+        />
+
+        <TripData
+          image={Trip2}
+          heading="Trip in Malaysia"
+          text="Malaysia is a beautifully complex vacation destination,
+          a land where ancient rainforests give way to multicultural city life.
+           Capital city Kuala Lumpur is visually defined by the iconic 
+           Petronas Twin Towers, while in charming Melaka the vibe is more quaint and historical."
+        />
+
+        <TripData
+          image={Trip3}
+          heading="Trip in Paris"
+          text="Paris has a reputation for being the ultimate romantic getaway.
+          But what visitors really swoon over is the city itself.
+           Those grand stone and wrought-iron buildings, the sidewalks brimming with cozy cafés,
+            and the Seine’s curving riverbanks are downright cinematic. 
+            But the city’s charms go beyond looks. The culinary scene creates an endless list of must-eat French dishes—rich and hearty coq au vin,
+            golden buttery croissants."
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Trip;

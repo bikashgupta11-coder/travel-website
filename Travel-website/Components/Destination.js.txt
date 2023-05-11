@@ -1,0 +1,50 @@
+import beach1 from "../assets/abbt6.jpeg";
+import beach2 from "../assets/abbt7.jpeg";
+import DestinationData from "./DestinationData";
+import beach3 from "../assets/abbt8.jpeg";
+import beach4 from "../assets/abbt9.jpeg";
+import "./DestinationStyles.css";
+
+const Destination = () => {
+  return (
+    <div className="destination">
+      <h1> Popular Destination</h1>
+      <p> Tours give you the oppurtunity to see a lot , within a frame.</p>
+
+      <DestinationData
+        className="first-des"
+        heading="Bora Bora, French Polynesia"
+        heading1="Live A Unique Experience On The Island Of Bora Bora."
+        text="Bora Bora Island is a dreamed sought-after destination for a romantic trip in French Polynesia. With its surprising landscape combining high mountains and atoll sceneries, Bora Bora is named 
+      « the Pearl of the Pacific
+       » thanks to its extreme beauty and paradise beaches. This islet setting will invite you to romance in the tranquility of its crystal clear lagoon.
+        Be tempted by the original concept of the overwater bungalow for a stay closer to the lagoon. In this idyllic environment,
+         you will forget it all! In one of the most beautiful lagoons in the world, you will make the most of a dive, an outrigger canoe or boat ride and be amazed by the incredible underwater scenery!
+          Bora Bora won’t be just a trip but a marvelous experience."
+        img1={beach1}
+        img2={beach2}
+      />
+
+      <DestinationData
+        className="first-des-reverse"
+        heading="Marrakesh, Morocco"
+        text="Marrakesh knows how to put on a show.
+         Its heady sights and sounds dazzle,
+          frazzle and enchant, 
+          as they have done for almost a millennia.
+           Bustle takes on a whole new meaning,
+            particularly in the Marrakesh medina.
+        Whether you want to spice up your pantry with North African flavors or
+         buy a carpet to add Moroccan-wow to your house,
+          Marrakesh is one of the best shopping destinations in the world. Got your map ready?
+           Well, it's probably of little use to you here.
+            Think of the medina's souqs as a shopping mall, dotted with shops,
+             accommodations, museums and historic sites, but laid out according to a labyrinthine medieval-era plan."
+        img1={beach3}
+        img2={beach4}
+      />
+    </div>
+  );
+};
+
+export default Destination;
